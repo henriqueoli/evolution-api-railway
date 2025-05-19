@@ -9,9 +9,10 @@ generator client {
 }
 
 datasource db {
-  provider = "mysql"
-  url      = env("DATABASE_CONNECTION_URI")
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
 }
+
 
 enum InstanceConnectionStatus {
   open
